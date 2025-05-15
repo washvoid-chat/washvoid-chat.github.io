@@ -1,1 +1,27 @@
-hello
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>添加文本示例</title>
+</head>
+<body>
+
+<h1>欢迎访问我的网页</h1>
+
+<div id="content">
+  <!-- 动态添加内容的区域 -->
+</div>
+
+<button onclick="addText()">点击添加文本</button>
+
+<script>
+function addText() {
+  const div = document.getElementById('content');
+  const p = document.createElement('p');
+  p.textContent = "这是新添加的一段文本。";
+  div.appendChild(p);
+}
+</script>
+
+</body>
+</html>
